@@ -57,3 +57,13 @@ for i in [5,67,23,87,56,24,98] :
     if i > 20:
         print('Large number', i)
 print("Ending")
+
+#Search using Boolean variable
+print("")
+found=False #initialize the value to false
+print("Start", found)
+for value in [5,67,23,87,56,24,98] :
+    if value > 60 :
+        found = True #return true if it finds the value defined '23'
+    print( found, value) #print the the found variable value and the number it has found
+print("End", found)
