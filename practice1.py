@@ -23,12 +23,12 @@ print('')
 #How do you identify the largest number efficiently?
 #Start with a variable with a -1
 largestSoFar = -1
-print( 'Start', largestSoFar)
+print( 'Start', largestSoFar) #Print something at the begining
 for number in [3,41,12,9,74,15] : # loop through each number and keep changing the value of largestSoFar
     if number > largestSoFar :
         largestSoFar = number
-    print(largestSoFar, number)
-print('End', largestSoFar)
+    print(largestSoFar, number) # print something we're doing over and over again
+print('End', largestSoFar) # print something at the end
 print('')
 
 #Summing in a loop
@@ -50,3 +50,10 @@ for value in [3,41,12,9,74,15] :
     sum = sum + value #Adding the item value to the initial Rocks value
     print(count, value, sum)
 print("After", count, sum, sum/count) #The running total
+print("")
+#Filtering in a loop
+print('Starting')
+for i in [5,67,23,87,56,24,98] :
+    if i > 20:
+        print('Large number', i)
+print("Ending")
