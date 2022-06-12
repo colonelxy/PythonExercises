@@ -41,3 +41,12 @@ print("After", Rocks) #The running total
 
 #Find the average
 
+print('') #Create a spaced line atop this block
+count =0 #item number
+sum=0 #Summing the items
+print('Before', count)
+for value in [3,41,12,9,74,15] :
+    count = count + 1
+    sum = sum + value #Adding the item value to the initial Rocks value
+    print(count, value, sum)
+print("After", count, sum, sum/count) #The running total
