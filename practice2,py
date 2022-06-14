@@ -1,0 +1,9 @@
+# Continuous loop using while loop
+while True:
+    line = input('>')
+    if line[0]== '#' :
+        continue # as long as the condition remains true, this loop level will continue
+    if line == 'done' :
+        break # if the condition becomes false, the loop will break
+    print (line)
+print('Done!')
