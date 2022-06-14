@@ -15,6 +15,17 @@ print("That's enough boss")
 
 # Definite loop with strings
 snacks = ['fries','cakes','soda','sweets']
-for s in snacks :
-    print('I would like some ' s)
+for s in snacks : # 'in' looks inside the item list  'snacks' and loops over each in order
+    print('I would like some ', s)
 print("Done")
+
+# Smart looping, doing something to each item in the list
+# example the largest number
+largest =[56,76,23,1,6,98,56,99] # The array of numbers we will sort
+soFar = 0 #let's start with 0 value
+print("Start: ", soFar) #  print out the start value of largest so far
+for num in largest :
+    if num > soFar :
+        soFar = num  # assign the new num to soFar if it's larger than the previous soFar value
+    print(soFar, num) # show us the latest largest number and the current value at position num for this iteration
+print('End: ', soFar) # print out the neding largest value in the whole array.
