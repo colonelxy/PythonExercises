@@ -7,3 +7,14 @@ while True:
         break # if the condition becomes false, the loop will break
     print (line)
 print('Done!')
+
+# Definite loops
+for i in [6, 78, 56, 23, 45] :
+    print(i)
+print("That's enough boss")
+
+# Definite loop with strings
+snacks = ['fries','cakes','soda','sweets']
+for s in snacks :
+    print('I would like some ' s)
+print("Done")
