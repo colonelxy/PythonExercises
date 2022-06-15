@@ -26,5 +26,17 @@ class Blockchain:
         self.chain.append(block)
         return block
 
+    # Display the previous block 
+    def print_previous_block(self) :
+        return self.chain[-1]
+
     # We want now to display the previous block
-    
+    def proof_of_work(self, previous_proof) :
+        new_proof = 1
+        check_proof = False 
+
+        while check_proof is False :
+            hash_operation = hashlib.sha256(
+                str(new_proof**2 - previous_proof**2).encode()
+            )
+            
